@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import datetime
 
 st.header("📈 차트 그리기")
 
@@ -30,7 +31,7 @@ st.markdown("> 복수의 데이터를 차트로 그리기 위해서는 데이터
 df_chart = pd.DataFrame(columns=['Date'])
 df_chart['Date'] = df_stocks['Date'].unique()
 for symbol in df_stocks['Symbol'].unique():
-	df_chart[symbol] = df_stocks[df_stocks['Symbol'] == symbol]['Close'].reset_index(drop=True)
+    df_chart[symbol] = df_stocks[df_stocks['Symbol'] == symbol]['Close'].reset_index(drop=True)
 st.dataframe(df_chart.head())
 
 st.code("df_chart = pd.DataFrame(columns=['Date'])\n"
@@ -42,10 +43,12 @@ st.code("df_chart = pd.DataFrame(columns=['Date'])\n"
         "st.line_chart(df_chart, x='Date')")
 
 st.line_chart(df_chart, x='Date')
+st.markdown("---")
 
 st.subheader("3. Bar Chart 출력하기")
 st.markdown("불러온 데이터를 bar Chart로 출력합니다.")
 st.bar_chart(df_index.tail(21), x='Date')
+st.markdown("---")
 
 st.subheader("4. 조건을 선택하여 차트 출력하기")
 st.markdown("SelectBox, MultiSelectBox 등 다양한 Input 위젯을 사용하면 원하는 조건의 데이터만 출력할 수 있습니다.")
@@ -61,3 +64,27 @@ st.code("symbol_list = st.multiselect('검색하고자 하는 기업을 선택�
 symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL')
 symbol_list.insert(0, 'Date')
 st.line_chart(df_chart[symbol_list], x='Date')
+
+st.markdown("- #### 검색 기간을 선택하여 차트 만들기")
+
+st.code("import datetime\n\n"
+        "st.write('검색 기간을 설정해 주세요.')\n"
+        "start_day = st.date_input(\n"
+        "\t '시작 일자,'\n"
+        "\t datetime.date(2022, 1, 1))\n\n"
+        "end_day = st.date_input(\n"
+        "\t '종료 일자',\n"
+        "\t datetime.date(2022, 12, 31))\n\n"
+        "st.write(f'검색 기간 : {start_day} ~ {end_day}')\n"
+        "st.line_chart(df_index[(df_index['Date'] >= str(start_day)) & (df_index['Date'] <= str(end_day))], x='Date')")
+
+st.write("검색 기간을 설정해 주세요.")
+start_day = st.date_input(
+    '시작 일자',
+    datetime.date(2022, 9, 1))
+
+end_day = st.date_input(
+    '종료 일자',
+    datetime.date(2022, 12, 31))
+st.write(f'검색 기간 : {start_day} ~ {end_day}')
+st.line_chart(df_index[(df_index['Date'] >= str(start_day)) & (df_index['Date'] <= str(end_day))], x='Date')

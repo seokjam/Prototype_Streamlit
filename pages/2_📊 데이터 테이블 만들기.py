@@ -52,3 +52,4 @@ st.code("symbol_list = st.multiselect('검색하고자 하는 기업을 선택�
 
 symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL')
 st.dataframe(df_stocks[df_stocks['Symbol'].isin(symbol_list)])
+

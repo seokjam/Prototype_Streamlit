@@ -23,21 +23,30 @@ st.markdown("**[장점]**\n"
             "> - Script를 업데이트 할 때 마다 변경사항을 바로 확인 가능합니다.")
 st.markdown("---")
 
+st.subheader("2. Streamlit 회원 가입하기")
+st.markdown("#### ① [Streamlit(https://streamlit.io/)](https://streamlit.io/) 사이트 접속하기\n")
+st.markdown("우측 상단 ***:red['Sign up']*** 버튼 클릭")
+st.image("./image/0-4.Streamlit Site.jpg")
+st.markdown("#### ② 'Continue with Google' 또는 'Continue with GitHub'을 선택하여 회원 가입 완료하기\n")
+st.image("./image/0-5.Streamlit Sign up.jpg")
+st.caption(" **Streamlit Cloud 배포를 위해선 :green[GitHub] 아이디가 필요합니다. 가급적 :green[GitHub] 아이디로 회원 가입을 추천 드립니다.**")
+st.markdown("---")
+
 st.subheader("2. Streamlit 시작하기")
-st.markdown("#### ① PyCharm(파이참) 실행 및 프로젝트 생성하기**\n")
-st.image("./image/0-1.Make Project.jpg")
+st.markdown("#### ① PyCharm(파이참) 실행 및 프로젝트 생성하기\n")
+st.image("./image/0-1.Create Project.jpg")
 st.caption("Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.")
 st.image("./image/0-2.Conda Env Project Create.jpg")
 st.caption(" **'Location'** 에 신규 프로젝트 생성 디렉토리를 입력하고,\n"
            "'Python Interpreter를 New environment using을 Conda로 설정한 뒤 **'Create'** 를 클릭합니다.")
 st.markdown("---")
 
-st.markdown("#### ② Streamlit 설치하기** \n\n"
+st.markdown("#### ② Streamlit 설치하기 \n\n"
             "Terminal(터미널) 창을 열고 다음 명령어를 실행합니다.")
 st.code("pip install streamlit")
 st.markdown("---")
 
-st.markdown("#### ③ Streamlit 실행하기** \n\n"
+st.markdown("#### ③ Streamlit 실행하기 \n\n"
             " **'Main.py'** 라는 파이썬 파일을 하나 만들고, 아래의 코드를 복사하여 붙여넣고 저장합니다.")
 st.code("import streamlit as st\n\n"
         "st.set_page_config(\n"
