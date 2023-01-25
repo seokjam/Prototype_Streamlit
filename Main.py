@@ -23,15 +23,6 @@ st.markdown("**[장점]**\n"
             "> - Script를 업데이트 할 때 마다 변경사항을 바로 확인 가능합니다.")
 st.markdown("---")
 
-st.subheader("2. Streamlit 회원 가입하기")
-st.markdown("#### ① [Streamlit(https://streamlit.io/)](https://streamlit.io/) 사이트 접속하기\n")
-st.markdown("우측 상단 ***:red['Sign up']*** 버튼 클릭")
-st.image("./image/0-4.Streamlit Site.jpg")
-st.markdown("#### ② 'Continue with Google' 또는 'Continue with GitHub'을 선택하여 회원 가입 완료하기\n")
-st.image("./image/0-5.Streamlit Sign up.jpg")
-st.caption(" **Streamlit Cloud 배포를 위해선 :green[GitHub] 아이디가 필요합니다. 가급적 :green[GitHub] 아이디로 회원 가입을 추천 드립니다.**")
-st.markdown("---")
-
 st.subheader("2. Streamlit 시작하기")
 st.markdown("#### ① PyCharm(파이참) 실행 및 프로젝트 생성하기\n")
 st.image("./image/0-1.Create Project.jpg")

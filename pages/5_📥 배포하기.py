@@ -3,7 +3,45 @@ import streamlit as st
 st.header("📥 배포하기")
 
 st.subheader("1. Github Repository 생성하기")
-st.markdown("")
-st.code("st.title('📌Title을 입력하세요.')\n")
-st.title("📌Title을 입력하세요.")
+st.markdown("#### ① Pycharm 메뉴에서 'VCS > Create Git Repository' 선택 \n")
+st.image("./image/5-1.Create Git Repository.jpg")
+
+st.markdown("#### ② Git Repository를 생성하고자 하는 프로젝트 디렉토리 선택 \n")
+st.image("./image/5-2.Select directory.jpg")
+
+st.markdown("- 디렉토리 선택 후 우측 상단에 Git Menu 생성 확인 [**:blue[↙(Pull)]**, :green[✔(Commit)], **:green[↗(Push)]]**")
+st.image("./image/5-4.Git Menu Button.jpg")
+
+st.markdown("#### ③ Git :green[✔(Commit)] 하기\n")
+st.markdown("- Unversioned Files 체크 박스를 체크하여 프로젝트의 파일들을 추가 후 하단의 'Commit' 클릭")
+st.image("./image/5-3.Git Commit.jpg")
+
+st.markdown("#### ④ Pycharm 메뉴에서 'Git > GitHub > Share Project GitHub' 선택하여 Repository 생성과 :green[↗(Push)] 완료하기\n")
+st.image("./image/5-4.Share Project On GitHub.jpg")
+st.markdown("- GitHub 사이트에 접속하여 Repository 생성이 완료된 것을 확인")
+st.image("./image/5-5.GitHub Push.jpg")
 st.markdown("---")
+
+st.subheader("2. Streamlit 회원 가입하기")
+st.markdown("#### ① [Streamlit(https://streamlit.io/)](https://streamlit.io/) 사이트 접속하기\n")
+st.markdown("우측 상단 ***:red['Sign up']*** 버튼 클릭")
+st.image("./image/0-4.Streamlit Site.jpg")
+st.markdown("#### ② 'Continue with Google' 또는 'Continue with GitHub'을 선택하여 회원 가입 완료하기\n")
+st.image("./image/0-5.Streamlit Sign up.jpg")
+st.caption(" **Streamlit Cloud 배포를 위해선 :green[GitHub] 아이디가 필요합니다. 가급적 :green[GitHub] 아이디로 회원 가입을 추천 드립니다.**")
+st.markdown("---")
+
+st.subheader("3. Streamlit Cloud에 New App 추가하기")
+st.markdown("#### ① 계정을 로그인 후 화면에서 'New app' 버튼 클릭합니다.\n")
+st.image("./image/5-6.New App.jpg")
+st.markdown("#### ② Deploy an app 화면에서 GitHub Repository 관련 정보를 입력하고 Deploy 버튼을 클릭합니다.\n"
+            "> - Repository : Github Repository URL(https://github.com/ 다음 주소)\n"
+            "> - Branch : master (또는 Main Branch 설정 값)\n"
+            "> - Main file path : Main.py")
+st.image("./image/5-7.Deploy an app.jpg")
+st.markdown("- 'Your app is in the oven' 이라는 메시지가 뜬 후 몇 분이 지난 후,\n"
+            " 'localhos:8501'에 뜨던 웹 페이지가 확인된다면 배포가 완료된 것입니다.")
+
+st.markdown("---")
+st.markdown("## 축하 드립니다.🎊🎊🎊🎊🎊\n")
+st.markdown("#### 이제 어디서든 누구나 접속 가능한 여러분의 웹 페이지를 만드셨습니다.\n")
