@@ -1,9 +1,9 @@
 import streamlit as st
 
-st.set_page_config(
-	page_title='Streamlit 프로토타입 만들기',
-	page_icon='🎈',
-	layout='wide'
-)
+st.header("📥 배포하기")
 
-st.header('🎈Streamlit 프로토타입 만들기')
+st.subheader("1. Github Repository 생성하기")
+st.markdown("")
+st.code("st.title('📌Title을 입력하세요.')\n")
+st.title("📌Title을 입력하세요.")
+st.markdown("---")
