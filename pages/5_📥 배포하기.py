@@ -51,7 +51,7 @@ st.markdown("- 터미널 창에서 다음 명령어를 실행하면 설치된 �
 st.code("pip list")
 st.markdown("- 터미널 창에서 다음 명령어를 실행하여 패키지 목록을 저장한 'requirements.txt' 파일을 생성합니다.")
 st.code("pip list --format=freeze > requirements.txt")
-st.markdown("- 생성된 'requirements.txt' :green[✔(Commit)], **:green[↗(Push)]]** 하여 완료합니다.\n"
+st.markdown("- 생성된 'requirements.txt' :green[✔(Commit)], **:green[↗(Push)]]** 하여 완료합니다.\n")
 
 st.markdown("---")
 st.markdown("## 축하 드립니다.🎊🎊🎊🎊🎊\n")
