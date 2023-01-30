@@ -12,8 +12,8 @@ st.markdown("> 데이터를 불러올 때는 :green['pandas'] 라이브러리를
 st.code("import pandas as pd\n\n"
         "stocks_file = 'https://raw.githubusercontent.com/seokjam/stremlitProject/master/data/sp500_stocks_2022.csv'\n"
         "index_file = 'https://raw.githubusercontent.com/seokjam/stremlitProject/master/data/sp500_index_2022.csv'\n"
-        "df_stocks = pd.read_csv(stocks_file)"
-        "df_index = pd.read_csv(index_file")
+        "df_stocks = pd.read_csv(stocks_file)\n"
+        "df_index = pd.read_csv(index_file)")
 
 df_stocks = pd.read_csv("./data/sp500_stocks_2022.csv")
 df_index = pd.read_csv("./data/sp500_index_2022.csv")
@@ -26,7 +26,7 @@ st.code("st.dataframe(df_stocks)")
 st.dataframe(df_stocks)
 
 st.markdown("- #### Pandas 스타일링 적용하기(ex.Highlight)")
-st.code("df_index.style.highlight_max(axis=0))")
+st.code("st.dataframe(df_index.style.highlight_max(axis=0))")
 st.dataframe(df_index.style.highlight_max(axis=0))
 st.markdown("---")
 
