@@ -47,9 +47,9 @@ st.markdown("> st.multiselect(label, options)\n"
             "> - label : Multi Select Box를 설명하는 문구\n"
             "> - options : Select 할 수 있는 목록"
             "> - default : 기본으로 Select 되어 있는 값")
-st.code("symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL')\n"
+st.code("symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL', key='df')\n"
         "st.dataframe(df_stocks[df_stocks['Symbol'].isin(symbol_list)])")
 
-symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL')
+symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL', key='df')
 st.dataframe(df_stocks[df_stocks['Symbol'].isin(symbol_list)])
 

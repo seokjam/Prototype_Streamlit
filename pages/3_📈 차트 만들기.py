@@ -13,8 +13,8 @@ st.markdown("> 데이터를 불러올 때는 :green['pandas'] 라이브러리를
 st.code("import pandas as pd\n\n"
         "stocks_file = 'https://raw.githubusercontent.com/seokjam/stremlitProject/master/data/sp500_stocks_2022.csv'\n"
         "index_file = 'https://raw.githubusercontent.com/seokjam/stremlitProject/master/data/sp500_index_2022.csv'\n"
-        "df_stocks = pd.read_csv(stocks_file)"
-        "df_index = pd.read_csv(index_file")
+        "df_stocks = pd.read_csv(stocks_file)\n"
+        "df_index = pd.read_csv(index_file)")
 
 df_stocks = pd.read_csv("./data/sp500_stocks_2022.csv")
 df_index = pd.read_csv("./data/sp500_index_2022.csv")
@@ -47,6 +47,7 @@ st.markdown("---")
 
 st.subheader("3. Bar Chart 출력하기")
 st.markdown("불러온 데이터를 bar Chart로 출력합니다.")
+st.code("df_index.tail(21), x='Data')")
 st.bar_chart(df_index.tail(21), x='Date')
 st.markdown("---")
 
@@ -58,10 +59,10 @@ st.markdown("> st.multiselect(label, options)\n"
             "> - label : Multi Select Box를 설명하는 문구\n"
             "> - options : Select 할 수 있는 목록\n"
             "> - default : 기본으로 Select 되어 있는 값")
-st.code("symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL')\n"
+st.code("symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL', key='chart')\n"
         "symbol_list.insert(0, 'Date')\n\n"
         "st.line_chart(df_chart[symbol_list], x='Date')")
-symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL')
+symbol_list = st.multiselect('검색하고자 하는 기업을 선택하세요.', (df_stocks['Symbol'].unique()), default='AAPL', key='chart')
 symbol_list.insert(0, 'Date')
 st.line_chart(df_chart[symbol_list], x='Date')
 
