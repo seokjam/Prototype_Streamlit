@@ -20,7 +20,7 @@ Streamlit 은 데이터 프로토타이핑 (Data Prototyping) 도구입니다.
 ![0-1.Create Project](https://github.com/seokjam/streamlit_prototype/blob/master/image/0-1.Create%20Project.jpg)
 Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.
 
-![0-2.Conda Env Project Create](./image/0-2.Conda Env Project Create.jpg)
+![0-2.Conda Env Project Create](https://github.com/seokjam/streamlit_prototype/blob/master/image/0-2.Conda%20Env%20Project%20Create.jpg)
 **'Location'** 에 신규 프로젝트 생성 디렉토리를 입력하고,
 'Python Interpreter를 New environment using을 Conda로 설정한 뒤 **'Create'** 를 클릭합니다.
 ---
@@ -54,7 +54,7 @@ Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.
 ---
 
 **'http://localhost:8501/'** 주소로 다음과 같은 페이지가 출력되는지 확인합니다.
-![0-3.Run Streamlit](./image/0-3.Run Streamlit.jpg)
+![0-3.Run Streamlit](https://github.com/seokjam/streamlit_prototype/blob/master/image/0-3.Run%20Streamlit.jpg)
 ---
 ## 축하 드립니다.🎉🎉🎉
 #### 이제 여러분은 나만의 웹 페이지를 만드셨습니다.
