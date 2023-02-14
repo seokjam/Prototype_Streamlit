@@ -1,5 +1,5 @@
 # [streamlit_prototype](https://seokjam-prototype-streamlit-main-wjiy15.streamlit.app/) 
-> streamlit으로 배포한 streamlit 프로토타입 교안
+> streamlit으로 배포한 streamlit 프로토타입 교안(https://seokjam-prototype-streamlit-main-wjiy15.streamlit.app/)
 
 ## 💻 Streamlit 프로토타입 만들기
 
