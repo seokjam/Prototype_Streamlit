@@ -1,17 +1,14 @@
-import pandas as pd
 import streamlit as st
-import datetime
 
 # Config pages
 st.set_page_config(
-    page_title="한국투자증권 신입사원 DT 프로젝트",
-    page_icon="💰",
+    page_title="Streamlit 프로토타입 만들기",
+    page_icon="💻",
     layout="wide"
 )
 
 # Text elements
-st.title("💰한국투자증권 신입사원 **:red[DT]** 프로젝트")
-st.header("Streamlit 프로토타입 만들기")
+st.title("💻 Streamlit 프로토타입 만들기")
 st.subheader("1. [Streamlit](https://streamlit.io/)이란?")
 st.markdown("***'A faster way to build and share data apps'***\n\n"
             "Streamlit 은 데이터 프로토타이핑 (Data Prototyping) 도구입니다.\n\n"
@@ -57,4 +54,3 @@ st.markdown('---')
 st.markdown("## 축하 드립니다.🎉🎉🎉\n")
 st.markdown("#### 이제 여러분은 나만의 웹 페이지를 만드셨습니다.\n"
             "#### Streamlit의 기본 기능들은 왼쪽 메뉴에서 살펴 볼 수 있습니다.")
-

@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("📝 텍스트 출력하기")
+st.header("📝 텍스트 출력하기")
 st.markdown("Streamlit은 다양한 형태로 텍스를 입력할 수 있습니다.")
 
 st.subheader("1. Title 출력하기")
