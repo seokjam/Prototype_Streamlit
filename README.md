@@ -1,4 +1,4 @@
-# ![streamlit_prototype](https://seokjam-prototype-streamlit-main-wjiy15.streamlit.app/)
+# [streamlit_prototype](https://seokjam-prototype-streamlit-main-wjiy15.streamlit.app/)
 
 ## 💻 Streamlit 프로토타입 만들기
 
