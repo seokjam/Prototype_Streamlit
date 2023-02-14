@@ -17,7 +17,7 @@ Streamlit 은 데이터 프로토타이핑 (Data Prototyping) 도구입니다.
 
 ### 2. Streamlit 시작하기
 #### ① PyCharm(파이참) 실행 및 프로젝트 생성하기
-![0-1.Create Project](./image/0-1.Create Project.jpg)
+![0-1.Create Project]("./image/0-1.Create Project.jpg")
 Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.
 
 ![0-2.Conda Env Project Create](./image/0-2.Conda Env Project Create.jpg)
