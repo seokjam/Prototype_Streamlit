@@ -14,6 +14,7 @@ Streamlit 은 데이터 프로토타이핑 (Data Prototyping) 도구입니다.
 > - Python 환경이기에 초보자도 쉽게 사용할 수 있습니다.
 > - Streamlit 패키지 설치 후 적절한 함수만 호출하면 사용할 수 있습니다.
 > - Script를 업데이트 할 때 마다 변경사항을 바로 확인 가능합니다.
+
 ---
 
 ### 2. Streamlit 시작하기
@@ -24,6 +25,7 @@ Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.
 ![0-2.Conda Env Project Create](https://github.com/seokjam/streamlit_prototype/blob/master/image/0-2.Conda%20Env%20Project%20Create.jpg)
 **'Location'** 에 신규 프로젝트 생성 디렉토리를 입력하고,
 'Python Interpreter를 New environment using을 Conda로 설정한 뒤 **'Create'** 를 클릭합니다.
+
 ---
 
 #### ② Streamlit 설치하기 
@@ -32,6 +34,7 @@ Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.
   ```
   pip install streamlit
   ```
+  
 ---
 
 #### ③ Streamlit 실행하기
@@ -52,11 +55,15 @@ Pycharm을 실행하고 'New Project' 버튼을 클릭합니다.
   ```
   streamlit run Main.py
   ```
+  
 ---
 
-**'http://localhost:8501/'** 주소로 다음과 같은 페이지가 출력되는지 확인합니다.
+'http://localhost:8501/' 주소로 다음과 같은 페이지가 출력되는지 확인합니다.
+
 ![0-3.Run Streamlit](https://github.com/seokjam/streamlit_prototype/blob/master/image/0-3.Run%20Streamlit.jpg)
+
 ---
+
 ## 축하 드립니다.🎉🎉🎉
 #### 이제 여러분은 나만의 웹 페이지를 만드셨습니다.
 #### Streamlit의 기본 기능들은 왼쪽 메뉴에서 살펴 볼 수 있습니다.
